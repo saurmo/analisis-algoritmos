@@ -1,0 +1,33 @@
+sumarNumeros: 7.412ms
+sumarNumeros: 7.319ms
+sumarNumeros: 7.115ms
+sumarNumeros: 7.462ms
+sumarNumeros: 11.528ms
+sumarNumeros: 12.019ms
+sumarNumeros: 20.959ms
+sumarNumeros: 106.699ms
+sumarNumeros: 975.239ms
+
+sumarNumerosOptimizado: 7.257ms
+sumarNumerosOptimizado: 7.759ms
+sumarNumerosOptimizado: 7.854ms
+sumarNumerosOptimizado: 7.595ms
+sumarNumerosOptimizado: 7.258ms
+sumarNumerosOptimizado: 7.644ms
+sumarNumerosOptimizado: 8.769ms
+sumarNumerosOptimizado: 7.549ms
+sumarNumerosOptimizado: 7.426ms
+
+tablaDeMultiplicar: 15.268ms
+tablaDeMultiplicar: 81.162ms
+tablaDeMultiplicar: 393.361ms
+tablaDeMultiplicar: 4063.205ms
+tablaDeMultiplicar: 47398.104ms
+
+SIN IMPRIMIR
+tablaDeMultiplicar: 7.683ms
+tablaDeMultiplicar: 11.020ms
+tablaDeMultiplicar: 45.171ms
+tablaDeMultiplicar: 289.943ms
+tablaDeMultiplicar: 3438.959ms
+tablaDeMultiplicar: 35048.873ms
