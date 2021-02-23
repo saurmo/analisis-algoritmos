@@ -2,8 +2,9 @@
   "name": "analisis-de-algoritmos",
   "version": "1.0.0",
   "description": "Curso de análisis y diseño de algoritmos",
-  "main": "index.js",
+  "main": "api-ejercicios/index.js",
   "scripts": {
+    "dev": "nodemon api-ejercicios/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,6 +18,8 @@
   },
   "homepage": "https://github.com/saurmo/analisis-algoritmos#readme",
   "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.5.1",
     "yargs": "^16.2.0"
   }
 }
