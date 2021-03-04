@@ -7,18 +7,24 @@ const solucionRecursiva = (n, monto_inicial) => {
   if (n == 0) {
     return monto_inicial;
   } else {
-    return Math.pow(1.12, n) * solucionRecursiva(n - 1, monto_inicial);
+    return 1.12 * solucionRecursiva(n - 1, monto_inicial);
   }
 };
 
-const solucionEcuacion = (n) => {
-  return 5 * n - 4;
+const solucionEcuacion = (n, monto_inicial) => {
+  return monto_inicial * Math.pow(1.12, n);
 };
 
+let anios = 15;
+
 console.time("RECURSIVO");
-let resultado = solucionRecursiva(3, 10000);
-console.log(resultado);
+let resultado = solucionRecursiva(anios, 10000);
 console.timeEnd("RECURSIVO");
+console.time("ECUACION");
+let resultado2 = solucionEcuacion(anios, 10000);
+console.timeEnd("ECUACION");
+
+console.log(`Periodo: ${anios}: Monto: ${resultado}  Monto 2: ${resultado2}`);
 
 // console.time("ecuacion");
 // let resultado2 = solucionEcuacion(10);
