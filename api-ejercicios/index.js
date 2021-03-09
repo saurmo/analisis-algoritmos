@@ -4,7 +4,7 @@
 const express = require("express");
 
 const app = express();
-
+app.use(express.json());
 //  INVOCAR LAS RUTAS DE LA CARPETA ROUTERS
 const routers = require("./routers/index");
 app.use(routers);
