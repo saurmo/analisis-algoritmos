@@ -122,6 +122,7 @@ switch (est_edad) {
  * 10. Bucles - itereaciones
  */
 // for
+let array = [];
 for (let index = 0; index < array.length; index++) {
   const element = array[index];
 }
@@ -140,3 +141,16 @@ do {
  */
 function imprimirEstudiante() {}
 const imprimirCurso = () => {};
+
+/**
+ * Redondeo con la clase Math
+ *
+ */
+console.log("CLASE MATH");
+let nro = 5.53;
+let floor = Math.floor(nro);
+let ceil = Math.ceil(nro);
+let round = Math.round(nro);
+console.log("Floor", floor);
+console.log("Ceil", ceil);
+console.log("Round", round);
