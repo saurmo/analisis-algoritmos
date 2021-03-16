@@ -19,13 +19,12 @@ const maxHeap = (input, i) => {
   const right = 2 * i + 2;
   let max = i;
   //Condición 1
-  4;
-  if (left < arrLength && input[left] > input[max]) {
+  if (left < arrLength && input[left].edad > input[max].edad) {
     max = left;
   }
   //Condición 2
 
-  if (right < arrLength && input[right] > input[max]) {
+  if (right < arrLength && input[right].edad > input[max].edad) {
     max = right;
   }
   //condición 3
@@ -41,8 +40,4 @@ const swap = (input, indexA, indexB) => {
   input[indexB] = temp;
 };
 
-console.time("HEAP SORT");
-const list = [4, 2, 3, 1, 5, 4];
-const sorted = heapSort(list);
-console.log(sorted);
-console.timeEnd("HEAP SORT");
+module.exports = heapSort;
