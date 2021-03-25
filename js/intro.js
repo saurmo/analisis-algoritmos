@@ -148,9 +148,15 @@ const imprimirCurso = () => {};
  */
 console.log("CLASE MATH");
 let nro = 5.53;
-let floor = Math.floor(nro);
-let ceil = Math.ceil(nro);
-let round = Math.round(nro);
+let floor = Math.floor(nro); // Redondeo al menor
+let ceil = Math.ceil(nro); // Redondeo al mayor
+let round = Math.round(nro); // Redondeo dependiendo de los decimales
 console.log("Floor", floor);
 console.log("Ceil", ceil);
 console.log("Round", round);
+
+console.log();
+console.log("ARRAY SLICE");
+//Copia de un array dependiendo de las posiciones de inicio y fin
+const arrayNumeros = [9, 8, 7, 6, 5, 4, 3];
+console.log(arrayNumeros.slice(2, 80));

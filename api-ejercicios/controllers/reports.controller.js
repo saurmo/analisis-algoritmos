@@ -1,5 +1,6 @@
 const _pg = require("../services/postgres.service");
 const heapSort = require("../services/heap-sort.service");
+const mergeSort = require("../services/merge-sort.service");
 const createExcel = require("../services/excel.service");
 const fs = require("fs");
 
@@ -9,7 +10,8 @@ const getReportEps = async (req, res) => {
     let response_db = await _pg.execute(sql);
     let rows = response_db.rows;
 
-    rows = heapSort(rows);
+    // rows = heapSort(rows);
+    rows = mergeSort(rows);
 
     let headers = [
       { header: "identificacion", key: "identificacion" },
