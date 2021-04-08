@@ -2,6 +2,7 @@ const _pg = require("../services/postgres.service");
 const heapSort = require("../services/heap-sort.service");
 const mergeSort = require("../services/merge-sort.service");
 const quickSort = require("../services/quick-sort.service");
+const countingSort = require("../services/counting-sort.service");
 const createExcel = require("../services/excel.service");
 const fs = require("fs");
 
@@ -13,7 +14,8 @@ const getReportEps = async (req, res) => {
 
     // rows = heapSort(rows);
     // rows = mergeSort(rows);
-    rows = quickSort(rows, 0, rows.length - 1);
+    // rows = quickSort(rows, 0, rows.length - 1);
+    rows = countingSort(rows, 0, 100);
 
     let headers = [
       { header: "identificacion", key: "identificacion" },

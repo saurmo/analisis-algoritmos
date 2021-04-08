@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/js/algoritmos-de-ordenamiento/quick-sort/index.js"
+            "program": "${workspaceFolder}/js/algoritmos-de-ordenamiento/counting-sort/index.js"
         },
         {
             "type": "node",

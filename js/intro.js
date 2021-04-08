@@ -143,7 +143,7 @@ function imprimirEstudiante() {}
 const imprimirCurso = () => {};
 
 /**
- * Redondeo con la clase Math
+ * 13. Redondeo con la clase Math
  *
  */
 console.log("CLASE MATH");
@@ -155,8 +155,31 @@ console.log("Floor", floor);
 console.log("Ceil", ceil);
 console.log("Round", round);
 
+/**
+ * 14. Array slice
+ */
 console.log();
 console.log("ARRAY SLICE");
 //Copia de un array dependiendo de las posiciones de inicio y fin
 const arrayNumeros = [9, 8, 7, 6, 5, 4, 3];
 console.log(arrayNumeros.slice(2, 80));
+
+/**
+ * 15. scope
+ */
+console.log();
+console.log("SCOPE");
+const temp1 = 0;
+var temp2 = 0;
+let temp3 = 1;
+
+if (1 == 1) {
+  let temp3 = 4;
+  var temp2 = 8;
+  console.log("--local--");
+  console.log(temp3);
+  console.log(temp2);
+}
+console.log("--global--");
+console.log(temp3);
+console.log(temp2);
