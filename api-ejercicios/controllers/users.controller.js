@@ -99,7 +99,7 @@ const updateUser = async (req, res) => {
   }
 };
 const getusuarios = async (req, res) => {
-
+  console.log("Esteban Quiroz Vasco");
     //usuarios
 
 }
