@@ -98,5 +98,11 @@ const updateUser = async (req, res) => {
     });
   }
 };
+const getusuarios = async (req, res) => {
+  console.log("Esteban Quiroz Vasco");
+    //usuarios
 
-module.exports = { getUsers, saveUser, deleteUser, updateUser };
+}
+
+
+module.exports = { getUsers, saveUser, deleteUser, updateUser,getusuarios };
