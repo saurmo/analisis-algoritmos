@@ -99,10 +99,8 @@ const updateUser = async (req, res) => {
   }
 };
 const getusuarios = async (req, res) => {
+  console.log("SANTIAGO URREGO");
+  //usuarios
+};
 
-    //usuarios
-
-}
-
-
-module.exports = { getUsers, saveUser, deleteUser, updateUser,getusuarios };
+module.exports = { getUsers, saveUser, deleteUser, updateUser, getusuarios };
