@@ -4,6 +4,7 @@ const {
   calcularInteresesE,
 } = require("../services/intereses.service");
 
+const fs = require("fs");
 const getUsers = async (req, res) => {
   try {
     let sql = "SELECT * FROM usuarios";
@@ -100,9 +101,22 @@ const updateUser = async (req, res) => {
 };
 const getusuarios = async (req, res) => {
   console.log("Esteban Quiroz Vasco");
-    //usuarios
+  //usuarios
+};
 
-}
+const uploadDocument = (req, res) => {
+  let archivos = req.files;
+  let mi_arc = archivos.archivo1;
+  // fs.mkdirSync() Crear Carpeta
+  fs.writeFileSync("./temp/test.pdf", mi_arc.data); // Guardar Archivo
+  return res.send(mi_arc);
+};
 
-
-module.exports = { getUsers, saveUser, deleteUser, updateUser,getusuarios };
+module.exports = {
+  getUsers,
+  saveUser,
+  deleteUser,
+  updateUser,
+  getusuarios,
+  uploadDocument,
+};

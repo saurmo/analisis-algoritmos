@@ -20,6 +20,7 @@
   "dependencies": {
     "exceljs": "^4.2.1",
     "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
     "pg": "^8.5.1",
     "yargs": "^16.2.0"
   }

@@ -8,6 +8,7 @@ router.get("/reportes/eps", reports_controller.getReportEps);
 router.get("/usuarios", user_controller.getUsers);
 router.get("/usuarios/:identificacion", user_controller.getUsers);
 router.post("/usuarios", user_controller.saveUser);
+router.post("/usuarios/documentos", user_controller.uploadDocument);
 router.delete("/usuarios/:identificacion", user_controller.deleteUser);
 router.put("/usuarios/:identificacion", user_controller.updateUser);
 
