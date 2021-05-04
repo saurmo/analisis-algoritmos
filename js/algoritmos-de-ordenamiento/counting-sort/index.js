@@ -28,9 +28,10 @@ const countingSort = (items, min, max) => {
       countArray[i]--;
     }
   }
-
   return items;
 };
 
-let items = [5, 8, 3, 3];
-console.log(countingSort(items, 3, 8));
+// let items = [5, 8, 3, 3];
+// console.log(countingSort(items, 3, 8));
+
+module.exports = countingSort;

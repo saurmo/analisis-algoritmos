@@ -2,6 +2,9 @@ const express = require("express");
 const router = express.Router();
 const user_controller = require("../controllers/users.controller");
 const reports_controller = require("../controllers/reports.controller");
+const base_controller = require("../controllers/base.controller");
+
+router.get("/", base_controller.sendMessage);
 
 router.get("/reportes/eps", reports_controller.getReportEps);
 
