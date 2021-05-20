@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/js/algoritmos-voraces/Dijkstra.js"
+            "program": "${workspaceFolder}/js/ejercicios-dane/departamento-total.js"
         },
         {
             "type": "node",

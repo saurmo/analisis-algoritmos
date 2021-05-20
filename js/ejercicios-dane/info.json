@@ -1,14 +1,5 @@
 [
   {
-    "codigo": "05001",
-    "departamento": "Antioquia",
-    "municipio": "Medellín",
-    "particulares": "2.359.801",
-    "lea": "12.529",
-    "total": "2.372.330",
-    "field7": ""
-  },
-  {
     "codigo": "05002",
     "departamento": "Antioquia",
     "municipio": "Abejorral",
@@ -17,6 +8,16 @@
     "total": "17.599",
     "field7": ""
   },
+  {
+    "codigo": "05001",
+    "departamento": "Antioquia",
+    "municipio": "Medellín",
+    "particulares": "2.359.801",
+    "lea": "12.529",
+    "total": "2.372.330",
+    "field7": ""
+  },
+
   {
     "codigo": "05004",
     "departamento": "Antioquia",
