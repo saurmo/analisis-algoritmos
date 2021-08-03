@@ -1,6 +1,8 @@
-# Curso de Análisis y Diseñor de algoritmos
+# Curso de Análisis y Diseño de algoritmos
 
+- Curso 2021-02 [link rama](https://github.com/saurmo/analisis-algoritmos/tree/curso-2021-2)
 - Curso 2021-01 [link rama](https://github.com/saurmo/analisis-algoritmos/tree/curso-2021-1)
+
 
 # Ejecutar el nodejs
 
