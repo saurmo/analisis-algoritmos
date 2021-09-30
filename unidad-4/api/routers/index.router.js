@@ -5,6 +5,7 @@ const router = express.Router()
 const estudiante_controller = require("../controllers/estudiantes.controller")
 const curso_controller = require("../controllers/cursos.controller");
 const { reporteNotas } = require('../controllers/notas.controller');
+const { reporteEstudiantes } = require('../controllers/reporte_estudiantes.controller');
 
 router.post("/estudiantes", estudiante_controller.guardarEstudiante)
     .get("/estudiantes", estudiante_controller.consultarEstudiantes)
@@ -17,6 +18,8 @@ router.post("/cursos", curso_controller.guardarCurso)
     .put("/cursos/:id", curso_controller.modificarCurso)
 
 router.get("/reportes/notas", reporteNotas)
+    .get("/reportes/estudiantes", reporteEstudiantes)
+
 
 
 module.exports = router
