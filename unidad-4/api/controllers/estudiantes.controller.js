@@ -4,6 +4,7 @@ const guardarEstudiante = (req, res) => {
 }
 
 const consultarEstudiantes = (req, res) => {
+    console.log("consultar estudiante");
     res.status(200).send({mensaje:"Consultar Estudiante"})
     
 }
