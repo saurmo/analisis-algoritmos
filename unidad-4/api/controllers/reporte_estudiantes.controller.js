@@ -30,7 +30,7 @@ const reporteEstudiantes = async (req, res) => {
     saveBuffer(buffer, "estudiantes.xlsx")
 
     let path_download="http://localhost:3000/docs/temp/estudiantes.xlsx"
-    res.send({ ok: true, message: "Estudiantes consultado", info: path_download })
+    res.send({ ok: true, message: "Estudiantes consultado", info: path_download, students })
 
     
 }
