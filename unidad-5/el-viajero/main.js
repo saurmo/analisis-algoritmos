@@ -42,24 +42,26 @@ const edge810 = new GraphEdge(node8, node10, 3);
 const edge910 = new GraphEdge(node9, node10, 4);
 
 const graph = new Graph();
-graph
-  .addEdge(edge12)
-  .addEdge(edge13)
-  .addEdge(edge14)
-  .addEdge(edge25)
-  .addEdge(edge26)
-  .addEdge(edge27)
-  .addEdge(edge35)
-  .addEdge(edge36)
-  .addEdge(edge37)
-  .addEdge(edge45)
-  .addEdge(edge46)
-  .addEdge(edge47)
-  .addEdge(edge58)
-  .addEdge(edge59)
-  .addEdge(edge68)
-  .addEdge(edge69)
-  .addEdge(edge78)
-  .addEdge(edge79)
-  .addEdge(edge810)
-  .addEdge(edge910);
+graph.addEdge(edge12)
+graph.addEdge(edge13)
+graph.addEdge(edge14)
+graph.addEdge(edge25)
+graph.addEdge(edge26)
+graph.addEdge(edge27)
+graph.addEdge(edge35)
+graph.addEdge(edge36)
+graph.addEdge(edge37)
+graph.addEdge(edge45)
+graph.addEdge(edge46)
+graph.addEdge(edge47)
+graph.addEdge(edge58)
+graph.addEdge(edge59)
+graph.addEdge(edge68)
+graph.addEdge(edge69)
+graph.addEdge(edge78)
+graph.addEdge(edge79)
+graph.addEdge(edge810)
+graph.addEdge(edge910)
+
+console.log(graph.searchValues());
+//console.log(graph);

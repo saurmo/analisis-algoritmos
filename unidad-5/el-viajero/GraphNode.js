@@ -2,7 +2,10 @@
 class GraphNode {
     constructor(value) {
       this.value = value;
-      this.edges = [];
+    }
+
+    getValue(){
+        return this.value
     }
   }
   
