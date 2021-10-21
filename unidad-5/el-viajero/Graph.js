@@ -30,22 +30,27 @@ class Graph {
 
     // Recorrer el json o el array desde el fin hasta el inicio
     searchValues() {
-        let keys = Object.keys(this.edges)
+        let keys = Object.keys(this.edges) // { "1-2": 2 }
         let temp = {}
         for (let index = keys.length - 1; index >= 0; index--) {
-            let edge_key = keys[index];
-            let array_keys = edge_key.split("-")
+            let edge_key = keys[index];   //  "1-2"
+            let array_keys = edge_key.split("-") // [1,2]
 
             if (Array.isArray(temp[array_keys[1]])) {
-                temp[array_keys[1]].push({ value: this.edges[edge_key], node: array_keys[0] })
+                temp[array_keys[1]].push({ value: this.edges[edge_key], node: array_keys[0] }) 
             } else {
                 temp[array_keys[1]] = []
                 temp[array_keys[1]].push({ value: this.edges[edge_key], node: array_keys[0] })
             }
         }
-        console.log(this.edges, temp);
+        console.log(temp);
 
     }
+
+    searchMinValue(){
+
+    }
+
 
 }
 
