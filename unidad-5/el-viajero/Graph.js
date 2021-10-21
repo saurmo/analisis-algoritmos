@@ -43,24 +43,38 @@ class Graph {
                 temp[array_keys[1]].push({ value: this.edges[edge_key], node: array_keys[0] })
             }
         }
-      let nodos_optimos=  this.searchMinValue(temp)
-let camino_optimo = this.buscarCamino(nodos_optimos)
+        let nodos_optimos = this.searchMinValue(temp)
+        let camino_optimo = this.buscarCamino(nodos_optimos)
     }
 
     searchMinValue(nodosHijos) {
-        let nodos_optimos=[]
+        let nodos_optimos = []
         let nodos = Object.keys(nodosHijos) // Capturar los nombres de los nodos 
         for (let index = nodos.length - 1; index >= 0; index--) {
             let nodo = nodos[index];
-            let nodoHijoOptimo = nodosHijos[nodo].sort((a,b)=> a.value - b.value)
-            nodos_optimos.push({nodo, optimo:nodoHijoOptimo[0]})
+            let nodoHijoOptimo = nodosHijos[nodo].sort((a, b) => a.value - b.value)
+            nodos_optimos.push({ nodo, optimo: nodoHijoOptimo[0] })
         }
         return nodos_optimos
     }
 
-    buscarCamino(nodosOptimos){
-console.log(nodosOptimos);
-    }
+    buscarCamino(nodosOptimos) {
+        let posicionNodo = 0
+        let nodoAux=nodosOptimos[0]
+        let camino=[]
+        for (let index = 0; index < nodosOptimos.length; index++) {
+            nodoAux = nodosOptimos[posicionNodo];
+            camino.push(nodoAux.nodo)
+            posicionNodo=nodosOptimos.findIndex(x=> x.nodo == nodoAux.optimo.node )   
+        }
+        console.log(camino);
+        // let primerNodo = nodosOptimos[0]
+        // let segundoNodo = nodosOptimos[primerNodo.optimo.nodo] //primerNodo.optimo.nodo=8
+        // let tercerNodo = nodosOptimos[segundoNodo.optimo.nodo] //segundoNodo.optimo.nodo=5
+      
+
+
+      }
 }
 
 
