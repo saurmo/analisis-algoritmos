@@ -37,21 +37,33 @@ class Graph {
             let array_keys = edge_key.split("-") // [1,2]
 
             if (Array.isArray(temp[array_keys[1]])) {
-                temp[array_keys[1]].push({ value: this.edges[edge_key], node: array_keys[0] }) 
+                temp[array_keys[1]].push({ value: this.edges[edge_key], node: array_keys[0] })
             } else {
                 temp[array_keys[1]] = []
                 temp[array_keys[1]].push({ value: this.edges[edge_key], node: array_keys[0] })
             }
         }
-        console.log(temp);
-
+      let nodos_optimos=  this.searchMinValue(temp)
+let camino_optimo = this.buscarCamino(nodos_optimos)
     }
 
-    searchMinValue(){
-
+    searchMinValue(nodosHijos) {
+        let nodos_optimos=[]
+        let nodos = Object.keys(nodosHijos) // Capturar los nombres de los nodos 
+        for (let index = nodos.length - 1; index >= 0; index--) {
+            let nodo = nodos[index];
+            let nodoHijoOptimo = nodosHijos[nodo].sort((a,b)=> a.value - b.value)
+            nodos_optimos.push({nodo, optimo:nodoHijoOptimo[0]})
+        }
+        return nodos_optimos
     }
 
-
+    buscarCamino(nodosOptimos){
+console.log(nodosOptimos);
+    }
 }
+
+
+
 
 module.exports = Graph;
