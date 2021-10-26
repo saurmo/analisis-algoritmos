@@ -1,8 +1,12 @@
 const express = require('express');
 const app = express()
+const cors = require('cors');
+
+app.use(cors())
 
 const router = require('./routers/index.router');
 app.use(router)
+
 
 app.use("/docs",express.static("docs"))
 

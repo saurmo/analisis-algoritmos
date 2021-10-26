@@ -19,5 +19,9 @@ const eliminarEstudiante = (req, res) => {
     
 }
 
-module.exports= {guardarEstudiante, consultarEstudiantes, modificarEstudiante, eliminarEstudiante}
+const testEstudiante=(req, res) => {
+    res.send("Hola Mundo")
+    
+}
+module.exports= {guardarEstudiante, testEstudiante, consultarEstudiantes, modificarEstudiante, eliminarEstudiante}
 

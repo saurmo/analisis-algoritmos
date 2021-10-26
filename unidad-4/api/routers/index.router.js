@@ -7,6 +7,8 @@ const curso_controller = require("../controllers/cursos.controller");
 const { reporteNotas } = require('../controllers/notas.controller');
 const { reporteEstudiantes } = require('../controllers/reporte_estudiantes.controller');
 
+router.get("/test-estudiantes", estudiante_controller.testEstudiante)
+
 router.post("/estudiantes", estudiante_controller.guardarEstudiante)
     .get("/estudiantes", estudiante_controller.consultarEstudiantes)
     .delete("/estudiantes/:id", estudiante_controller.eliminarEstudiante)

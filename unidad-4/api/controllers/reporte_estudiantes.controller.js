@@ -32,6 +32,7 @@ const reporteEstudiantes = async (req, res) => {
         let path_download = "http://localhost:3000/docs/temp/estudiantes.xlsx"
         res.send({ ok: true, message: "Estudiantes consultado", info: path_download, students })
     } catch (error) {
+        console.log(error);
         console.log("error en peticion");
         res.status(400).send({ ok: false, message: "Estudiantes NO consultado" })
     }
