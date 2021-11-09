@@ -1,0 +1,10 @@
+[
+    {"id":"01", "nombre":"Arroz", "precio":4500, "descripcion":"Arroz colombiano", "imagen":"https://www.comedera.com/wp-content/uploads/2019/11/arroz-blanco-cocido-500x375.jpg"},
+    {"id":"02", "nombre":"Panela", "precio":4500},
+    {"id":"03", "nombre":"Lentejas", "precio":4500},
+    {"id":"04", "nombre":"Carne Res", "precio":4500},
+    {"id":"05", "nombre":"Carne Cerdo", "precio":4500},
+    {"id":"06", "nombre":"Lechuga", "precio":4500},
+    {"id":"07", "nombre":"Limon", "precio":4500},
+    {"id":"08", "nombre":"Aguacate", "precio":4500}
+]
